@@ -11,7 +11,7 @@ Projects are Qvault's way of providing "unguided" learning to students. Courses 
 
 ## About the author, Lane Wagner
 
-![Lane](https://qvault.io/wp-content/uploads/2021/04/profile-150x150.jpg)
+![Lane](https://pbs.twimg.com/profile_images/1452275557048143884/Tz4AWu6U_200x200.jpg)
 
 Lane is currently the Head of Engineering at a bay-area startup, with experience on large engineering teams writing JavaScript, Python and Go. He has a passion for coding education, and particularly enjoys helping new developers find their dream jobs in tech.
 
