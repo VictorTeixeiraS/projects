@@ -30,7 +30,7 @@ This function should read the current state of the database, create a new user s
 
 `func (c Client) UpdateUser(email, password, name string, age int) (User, error)`
 
-This function will be similar to CreateUser, but if the user doesn't already exist, it should return an error: `"user doesn't exist""`. It also won't update the `CreatedAt` timestamp, that should be left alone.
+This function will be similar to CreateUser, but if the user doesn't already exist, it should return an error: `"user doesn't exist"`. It also won't update the `CreatedAt` timestamp, that should be left alone.
 
 ### GetUser
 

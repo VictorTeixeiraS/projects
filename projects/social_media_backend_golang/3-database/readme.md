@@ -52,7 +52,7 @@ We'll export the `User` and `Post` types so that the users of the package can in
 
 `func (c Client) createDB() error`
 
-This unexported function creates a mew database at the path in the `Client` instance. It will overwrite any previous data in the file if it existed previously.
+This unexported function creates a new database at the path in the `Client` instance. It will overwrite any previous data in the file if it existed previously.
 
 You'll want to use [os.WriteFile](https://pkg.go.dev/os#WriteFile) and [json.Marshal](https://qvault.io/golang/json-golang/#marshal-json).
 
