@@ -1,2 +1,4 @@
 .ds_store
 *.rest
+node_modules/
+.vscode/
