@@ -5,7 +5,7 @@ import requests
 from urllib.parse import urlparse
 
 
-def crawl_page(root_url, url, pages):
+def crawl_page(base_url, url, pages):
     normalized_url = normalize_url(url)
 
     # This is a new page, create an entry for it
@@ -13,7 +13,7 @@ def crawl_page(root_url, url, pages):
         pages[normalized_url] = 0
 
     # If this URL is offsite, skip it
-    if urlparse(root_url).netloc != urlparse(url).netloc:
+    if urlparse(base_url).netloc != urlparse(url).netloc:
         pages[normalized_url] = None
         return pages
 
@@ -44,9 +44,9 @@ def crawl_page(root_url, url, pages):
     pages[normalized_url] += 1
 
     # Scan the page and crawl each link found
-    urls = get_urls_from_string(resp.content, root_url)
+    urls = get_urls_from_string(resp.content, base_url)
     for url in urls:
-        crawl_page(root_url, url, pages)
+        crawl_page(base_url, url, pages)
 
     return pages
 
@@ -66,10 +66,10 @@ def validate_response(resp, url):
 
 # get_urls_from_string scans through a string,
 # finds all the links, and returns the urls in a list
-def get_urls_from_string(page_content, root_url):
+def get_urls_from_string(page_content, base_url):
     urls = []
     tree = html.fromstring(page_content)
-    tree.make_links_absolute(base_url=root_url)
+    tree.make_links_absolute(base_url=base_url)
     for elem in tree.iter():
         if elem.tag == "a":
             url = elem.get("href")

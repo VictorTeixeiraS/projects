@@ -10,10 +10,10 @@ def main():
     if len(sys.argv) < 2:
         print("no website provided")
         exit(1)
-    root_url = sys.argv[1]
+    base_url = sys.argv[1]
 
     pages = {}
-    pages = crawl_page(root_url, root_url, pages)
+    pages = crawl_page(base_url, base_url, pages)
     print_report(pages)
 
 
