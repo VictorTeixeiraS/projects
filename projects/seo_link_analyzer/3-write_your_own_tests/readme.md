@@ -27,7 +27,7 @@ Would become:
 ]
 ```
 
-Because we'll be sorting by the values in the dictionary, where the highest values come first in the list.
+We are sorting by the values in the dictionary, where the highest values come first in the list.
 
 ## Sorting
 
