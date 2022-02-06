@@ -1,6 +1,6 @@
-# Internal Link Tracker in Python
+# SEO Link Analyzer in Python
 
-It's time to put your Python skills to the test and build a real project on your local computer. By the end of this project, you'll have an "internal link tracker" that will allow your users to analyze the internal linking profile of a website for SEO purposes. You'll also be able to show off this project on your Github profile and your resume, so do your best work!
+It's time to put your Python skills to the test and build a real project on your local computer. By the end of this project, you'll have an "SEO link analyzer" that will allow your users to analyze the internal links on a website for [SEO purposes](https://searchengineland.com/guide/what-is-seo). You'll also be able to show off this project on your Github profile and your resume, so do your best work!
 
 ## About the author, Lane Wagner
 

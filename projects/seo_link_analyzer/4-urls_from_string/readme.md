@@ -40,3 +40,25 @@ Now that we have lxml, we can use it by adding `from lxml import html` to the to
 2. Use the tree's [make_links_absolute](https://lxml.de/apidoc/lxml.html.html#lxml.html.HtmlMixin.make_links_absolute) method to convert all the links in the tree to absolute URLs.
 3. Use the tree's iter() method, `for elem in tree.iter():` to iterate over each HTML tag.
 4. If an element is a link, which you can check by making sure it's `.tag` property is "a", append the URL to a list that you'll return at the end of the function. You can get the URL from the element using the `.get()` method: `elem.get("href")`.
+
+## Tests
+
+Here are some example tests for this function. Feel free to add more.
+
+```python
+def test_get_urls_from_string(self):
+    self.assertEqual(
+        ["https://qvault.io"],
+        get_urls_from_string(
+            '<html><body><a href="https://qvault.io"><span>Qvault></span></a></body></html>',
+            "https://qvault.io",
+        ),
+    )
+    self.assertEqual(
+        ["https://qvault.io", "https://wagslane.dev"],
+        get_urls_from_string(
+            '<html><body><a href="https://qvault.io"><span>Qvault></span></a><a href="https://wagslane.dev"><span>Qvault></span></a></body></html>',
+            "https://qvault.io",
+        ),
+    )
+```
