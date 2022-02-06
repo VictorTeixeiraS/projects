@@ -1,13 +1,6 @@
 # Social Media Backend in Go
 
-## Projects vs Courses
-
-Projects are Qvault's way of providing "unguided" learning to students. Courses are a great way to learn new concepts quickly, then projects let you get your hands dirty with "real world" code.
-
-* In a project you work on your local machine
-* You'll have a working codebase at the end to show off on your Github profile or on a resume
-* Projects allow you to come up with more of the solution on your own, like you would in a real life job
-* You'll still have instructions and guidance on how to complete each step
+It's time to put your Go skills to the test and build a fully-functioning backend HTTP server. By the end of this project, you'll have a "social media" server running on your local computer. You'll also be able to show off this project on your Github profile and your resume, so do your best work!
 
 ## About the author, Lane Wagner
 
@@ -20,3 +13,12 @@ Lane is currently the Head of Engineering at a bay-area startup, with experience
 I'm glad to have you with me in this HTTP server project! I've been writing Go for over 5 years, and it is by far my favorite general purpose programming language. I've found it has positioned itself well as a fast, simple, and lightweight language that I think will become the backbone of the modern web.
 
 If you get stuck or have questions, I hang out in [Qvault's Discord server](https://discord.com/invite/EEkFwbv), and someone from the community or myself would love to answer your questions and get to know you better. Also, feel free to reach out directly on [Twitter](https://twitter.com/wagslane).
+
+## Projects vs Courses
+
+Projects are our way of providing "unguided" learning. Courses are a great way to learn new concepts quickly, then projects let you get your hands dirty with "real world" code.
+
+* In a project you work on your local machine
+* You'll have a working codebase at the end to show off on your Github profile or on a resume
+* Projects allow you to come up with more of the solution on your own, like you would in a real life job
+* You'll still have instructions and guidance on how to complete each step
