@@ -1,0 +1,2 @@
+lxml == 4.7.1 # https://pypi.org/project/lxml/
+requests == 2.27.1 # https://pypi.org/project/requests/

@@ -7,7 +7,7 @@ from report import print_report
 
 
 def main():
-    if len(sys.argv) < 2:
+    if len(sys.argv) != 2:
         print("no website provided")
         exit(1)
     base_url = sys.argv[1]

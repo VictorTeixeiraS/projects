@@ -5,48 +5,14 @@ import requests
 from urllib.parse import urlparse
 
 
-def crawl_page(base_url, url, pages):
-    normalized_url = normalize_url(url)
-
-    # This is a new page, create an entry for it
-    if normalized_url not in pages:
-        pages[normalized_url] = 0
-
-    # If this URL is offsite, skip it
-    if urlparse(base_url).netloc != urlparse(url).netloc:
-        pages[normalized_url] = None
-        return pages
-
-    # If this is a page we've already checked
-    # and it is invalid skip it
-    if pages[normalized_url] is None:
-        return pages
-
-    # If we've already validated this page
-    # increase the count and skip
-    if pages[normalized_url] > 0:
-        pages[normalized_url] += 1
-        return pages
-
+def crawl_page(base_url, pages):
     # Make a request to the URL
-    resp = requests.get(url)
-
-    # If the response isn't a a valid page, log
-    # and skip it now and in the future
-    try:
-        validate_response(resp, url)
-    except Exception as e:
-        print(e)
-        pages[normalized_url] = None
-        return pages
-
-    # Increment the count for this page
-    pages[normalized_url] += 1
+    resp = requests.get(base_url)
 
     # Scan the page and crawl each link found
     urls = get_urls_from_string(resp.content, base_url)
     for url in urls:
-        crawl_page(base_url, url, pages)
+        pages[url] = 1
 
     return pages
 
