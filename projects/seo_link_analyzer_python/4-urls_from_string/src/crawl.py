@@ -13,4 +13,3 @@ def get_urls_from_string(page_content, base_url):
             url = elem.get("href")
             urls.append(url)
     return urls
-

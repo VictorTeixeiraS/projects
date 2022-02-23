@@ -8,4 +8,3 @@ def remove_none_values(dict):
     for key_to_delete in keys_to_delete:
         del dict[key_to_delete]
     return dict
-
