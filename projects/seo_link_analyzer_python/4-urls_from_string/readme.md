@@ -34,7 +34,7 @@ Now that we have lxml, we can use it by adding `from lxml import html` to the to
 
 `get_urls_from_string(page_content, base_url)` takes 2 arguments. The first is an HTML string like we discussed earlier, the second is the root URL of the website we're crawling. This will allow us to rewrite [relative URLs into absolute URLs](https://www.seoclarity.net/resources/knowledgebase/difference-relative-absolute-url-15325/).
 
-## Hints
+## Some additional information
 
 1. Use the [html.fromstring](https://lxml.de/apidoc/lxml.html.html#lxml.html.fromstring) method to get a document tree.
 2. Use the tree's [make_links_absolute](https://lxml.de/apidoc/lxml.html.html#lxml.html.HtmlMixin.make_links_absolute) method to convert all the links in the tree to absolute URLs.
