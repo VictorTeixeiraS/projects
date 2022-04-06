@@ -10,7 +10,7 @@ This repo contains the complete source code and instructions for all the take-ho
 * Please leave feedback in the form of issues here on Github
 * All projects are free to audit, meaning you can read all the material here or on Qvault for free
 
-Inside the [projects](projects) folder you'll find the code for each step. However, if you're interested in completing the projects rather than contributing, I recommend using the interface at [Qvault](https://app.qvault.io) rather than sifting through this repo.
+Inside the [projects](projects) folder you'll find the code for each step. However, if you're interested in completing the projects rather than contributing, I recommend using the interface at [Qvault](https://boot.dev) rather than sifting through this repo.
 
 ## Roadmap
 

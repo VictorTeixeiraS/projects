@@ -2,7 +2,7 @@
 
 "Test driven development" is a popular method of writing software. The idea is that you write tests for your code *first*, then you write the code that gets the tests to pass. We're going to approach this project using TDD.
 
-In this step, we'll be writing a function that removes all keys in a  [dictionary](https://app.qvault.io/course/f9a25dfb-3e00-4727-ac78-36de82315355/3afd4fce-5c36-4fa2-837b-f71cb1249331) that have `None` as their value.
+In this step, we'll be writing a function that removes all keys in a  [dictionary](https://boot.dev/course/f9a25dfb-3e00-4727-ac78-36de82315355/3afd4fce-5c36-4fa2-837b-f71cb1249331) that have `None` as their value.
 
 ## tests.py
 
