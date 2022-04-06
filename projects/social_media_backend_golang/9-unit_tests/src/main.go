@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/qvault/courses/projects/http_server_golang/internal/database"
+	"github.com/bootdotdev/courses/projects/http_server_golang/internal/database"
 )
 
 type apiConfig struct {

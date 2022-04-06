@@ -29,7 +29,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/wagslane/workspace/github.com/qvault/projects/projects/internal_link_tracker_python/2-conclusion/src/venv"
+set -gx VIRTUAL_ENV "/Users/wagslane/workspace/github.com/bootdotdev/projects/projects/internal_link_tracker_python/2-conclusion/src/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

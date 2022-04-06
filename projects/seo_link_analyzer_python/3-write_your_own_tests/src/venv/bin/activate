@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/wagslane/workspace/github.com/qvault/projects/projects/internal_link_tracker_python/2-conclusion/src/venv"
+VIRTUAL_ENV="/Users/wagslane/workspace/github.com/bootdotdev/projects/projects/internal_link_tracker_python/2-conclusion/src/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

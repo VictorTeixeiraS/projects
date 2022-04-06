@@ -2,19 +2,19 @@
   <img src="assets/logo.png">
 </p>
 
-# Qvault's Take Home Computer Science Projects
+# Boot.dev's Take Home Computer Science Projects
 
-This repo contains the complete source code and instructions for all the take-home projects on [Qvault's free-to-audit computer science program](https://qvault.io).
+This repo contains the complete source code and instructions for all the take-home projects on [Boot.dev's free-to-audit computer science program](https://boot.dev).
 
 * Hit the project with a star if you find it useful ⭐
 * Please leave feedback in the form of issues here on Github
-* All projects are free to audit, meaning you can read all the material here or on Qvault for free
+* All projects are free to audit, meaning you can read all the material here or on Boot.dev for free
 
-Inside the [projects](projects) folder you'll find the code for each step. However, if you're interested in completing the projects rather than contributing, I recommend using the interface at [Qvault](https://boot.dev) rather than sifting through this repo.
+Inside the [projects](projects) folder you'll find the code for each step. However, if you're interested in completing the projects rather than contributing, I recommend using the interface at [Boot.dev](https://boot.dev) rather than sifting through this repo.
 
 ## Roadmap
 
-You can find the [roadmap for new projects and courses here](https://github.com/qvault/curriculum), be sure to check it out and let us know what you think.
+You can find the [roadmap for new projects and courses here](https://github.com/bootdotdev/curriculum), be sure to check it out and let us know what you think.
 
 ## 👏 Contribute
 
@@ -22,7 +22,7 @@ We love help and feedback on how we can improve the projects! The recommended wa
 
 ## 💬 Contact
 
-If you would like to discuss the project feel free to [contact us at Qvault](https://qvault.io/contact/). We're most responsive on Discord, but you can also find us on Twitter.
+If you would like to discuss the project feel free to [contact us at Boot.dev](https://blog.boot.dev/contact). We're most responsive on Discord, but you can also find us on Twitter.
 
 * [Twitter](https://twitter.com/q_vault)
 * [Discord](https://discord.com/invite/HxuxE6Nv)

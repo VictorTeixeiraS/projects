@@ -12,7 +12,7 @@ Lane is currently the Head of Engineering at a bay-area startup, with experience
 
 I'm glad to have you with me in this HTTP server project! I've been writing Go for over 5 years, and it is by far my favorite general purpose programming language. I've found it has positioned itself well as a fast, simple, and lightweight language that I think will become the backbone of the modern web.
 
-If you get stuck or have questions, I hang out in [Qvault's Discord server](https://discord.com/invite/EEkFwbv), and someone from the community or myself would love to answer your questions and get to know you better. Also, feel free to reach out directly on [Twitter](https://twitter.com/wagslane).
+If you get stuck or have questions, I hang out in [Boot.dev's Discord server](https://discord.com/invite/EEkFwbv), and someone from the community or myself would love to answer your questions and get to know you better. Also, feel free to reach out directly on [Twitter](https://twitter.com/wagslane).
 
 ## Projects vs Courses
 

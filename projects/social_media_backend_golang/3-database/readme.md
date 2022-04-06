@@ -4,7 +4,7 @@ Let's build a simple database package. Our database package will simply read and
 
 ## Internal folder
 
-In go, [packages](https://qvault.io/golang/how-to-separate-library-packages-in-go/) that aren't meant to be used by other modules are stored in an `internal` folder. The Go toolchain won't allow modules that don't contain that `internal` folder to use that code, so it's good practice to scope packages accordingly.
+In go, [packages](https://blog.boot.dev/golang/how-to-separate-library-packages-in-go/) that aren't meant to be used by other modules are stored in an `internal` folder. The Go toolchain won't allow modules that don't contain that `internal` folder to use that code, so it's good practice to scope packages accordingly.
 
 Create an `internal` directory at the root of your project, then add a `database` directory with a `database.go` file. Make sure to add `package database` at the top of that file.
 
@@ -20,7 +20,7 @@ Create a `NewClient` function that creates an instance of a `Client`. It should 
 
 ## Database schema
 
-We need a structure that will define our JSON schema in the database file. In Go, the easiest way to do this is by using [structs with JSON tags](https://qvault.io/golang/json-golang/). Also, to kill two birds with one stone, we can use these same JSON tags later in our HTTP responses from the API.
+We need a structure that will define our JSON schema in the database file. In Go, the easiest way to do this is by using [structs with JSON tags](https://blog.boot.dev/golang/json-golang/). Also, to kill two birds with one stone, we can use these same JSON tags later in our HTTP responses from the API.
 
 ```go
 type databaseSchema struct {
@@ -54,7 +54,7 @@ We'll export the `User` and `Post` types so that the users of the package can in
 
 This unexported function creates a new database at the path in the `Client` instance. It will overwrite any previous data in the file if it existed previously.
 
-You'll want to use [os.WriteFile](https://pkg.go.dev/os#WriteFile) and [json.Marshal](https://qvault.io/golang/json-golang/#marshal-json).
+You'll want to use [os.WriteFile](https://pkg.go.dev/os#WriteFile) and [json.Marshal](https://blog.boot.dev/golang/json-golang/#marshal-json).
 
 ## EnsureDB method
 
@@ -75,7 +75,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/qvault/courses/projects/http_server_golang/internal/database"
+	"github.com/bootdotdev/courses/projects/http_server_golang/internal/database"
 )
 
 func main() {

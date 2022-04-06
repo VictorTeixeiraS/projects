@@ -15,4 +15,4 @@ I hope you've enjoyed the project, it's always good to solidify the things you l
 
 ## Contact me
 
-I hang out in the [Qvault Discord](https://discord.gg/EEkFwbv) and on [Twitter @wagslane](https://twitter.com/wagslane). Let me know what you thought of the project!
+I hang out in the [Boot.dev Discord](https://discord.gg/EEkFwbv) and on [Twitter @wagslane](https://twitter.com/wagslane). Let me know what you thought of the project!

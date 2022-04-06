@@ -2,11 +2,11 @@
 
 Often times you'll find URLs that link to the same page, but are actually different strings. For example, all of these URLs likely will resolve to the same page:
 
-* https://Qvault.io
-* http://qvault.io
-* http://qvault.io/
-* https://qvault.io#header
-* https://qvault.io?via=lane
+* https://Boot.dev
+* http:/boot.dev
+* http://boot.dev/
+* https://boot.dev#header
+* https://boot.dev?via=lane
 
 We want to count all these as the "same" URL for the purposes of our SEO tool.
 

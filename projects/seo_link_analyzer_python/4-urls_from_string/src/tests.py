@@ -27,17 +27,17 @@ class Tests(unittest.TestCase):
 
     def test_get_urls_from_string(self):
         self.assertEqual(
-            ["https://qvault.io"],
+            ["https://blog.boot.dev"],
             get_urls_from_string(
-                '<html><body><a href="https://qvault.io"><span>Qvault></span></a></body></html>',
-                "https://qvault.io",
+                '<html><body><a href="https://blog.boot.dev"><span>Boot.dev></span></a></body></html>',
+                "https://blog.boot.dev",
             ),
         )
         self.assertEqual(
-            ["https://qvault.io", "https://wagslane.dev"],
+            ["https://blog.boot.dev", "https://wagslane.dev"],
             get_urls_from_string(
-                '<html><body><a href="https://qvault.io"><span>Qvault></span></a><a href="https://wagslane.dev"><span>Qvault></span></a></body></html>',
-                "https://qvault.io",
+                '<html><body><a href="https://blog.boot.dev"><span>Boot.dev></span></a><a href="https://wagslane.dev"><span>Boot.dev></span></a></body></html>',
+                "https://blog.boot.dev",
             ),
         )
 

@@ -12,7 +12,7 @@ Lane is currently the Head of Engineering at a bay-area startup, with experience
 
 Thanks for joining me in this link tracker project! I've been writing Python for over 10 years, and it is such a great fit for a small productivity script like this. Backlinks are the back-bone of SEO on websites around the world, and frequently website owners want to know how well the pages on their site link to the other pages. A healthy amount of backlinks makes your website easy to navigate for the user as well as Google's crawler bot. Our tool will be a command-line script that prints the backlink profile of a website.
 
-If you get stuck or have questions, I hang out in [Qvault's Discord server](https://discord.com/invite/EEkFwbv), and someone from the community or myself would love to answer your questions and get to know you better. Also, feel free to reach out directly on [Twitter](https://twitter.com/wagslane).
+If you get stuck or have questions, I hang out in [Boot.dev's Discord server](https://discord.com/invite/EEkFwbv), and someone from the community or myself would love to answer your questions and get to know you better. Also, feel free to reach out directly on [Twitter](https://twitter.com/wagslane).
 
 ## Projects vs Courses
 

@@ -2,7 +2,7 @@
 
 This is going to be the largest step so far, and will require the most "figuring it out own your own". If you get stuck, please reach out in the Discord!
 
-We're going to update the `crawl_page` function to be [recursive](https://qvault.io/javascript/how-to-recursively-traverse-objects/), which means its a function that will call itself. We do this because we want to continue to crawl each URL we find on a page until we've crawled every page on the site.
+We're going to update the `crawl_page` function to be [recursive](https://blog.boot.dev/javascript/how-to-recursively-traverse-objects/), which means its a function that will call itself. We do this because we want to continue to crawl each URL we find on a page until we've crawled every page on the site.
 
 `crawl_page` will now take 3 arguments: `crawl_page(base_url, url, pages)`
 

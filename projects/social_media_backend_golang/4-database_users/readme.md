@@ -55,7 +55,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/qvault/courses/projects/http_server_golang/internal/database"
+	"github.com/bootdotdev/courses/projects/http_server_golang/internal/database"
 )
 
 func main() {

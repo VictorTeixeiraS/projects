@@ -4,7 +4,7 @@ Let's create a `Post` entity so our users can microblog about their cats!
 
 ## UUID dependency
 
-We'll be using [UUIDs](https://qvault.io/clean-code/what-are-uuids-and-should-you-use-them/) as our post IDs. The UUIDs ensure that no two posts have the same ID. We'll use [Google's UUID library](https://pkg.go.dev/github.com/google/uuid). In Go, to add a dependency, you use `go get MODULE_PATH`, where the `MODULE_PATH` is typically the URL of the module's git repo.
+We'll be using [UUIDs](https://blog.boot.dev/clean-code/what-are-uuids-and-should-you-use-them/) as our post IDs. The UUIDs ensure that no two posts have the same ID. We'll use [Google's UUID library](https://pkg.go.dev/github.com/google/uuid). In Go, to add a dependency, you use `go get MODULE_PATH`, where the `MODULE_PATH` is typically the URL of the module's git repo.
 
 `go get github.com/google/uuid`
 
@@ -48,7 +48,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/qvault/courses/projects/http_server_golang/internal/database"
+	"github.com/bootdotdev/courses/projects/http_server_golang/internal/database"
 )
 
 func main() {
