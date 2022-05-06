@@ -41,7 +41,7 @@ Lastly, we'll create a simple [http.Server](https://pkg.go.dev/net/http#Server)
 ```go
 const addr = "localhost:8080"
 srv := http.Server{
-    Handler:      m,
+    Handler:      serveMux,
     Addr:         addr,
     WriteTimeout: 30 * time.Second,
     ReadTimeout:  30 * time.Second,
