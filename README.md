@@ -24,5 +24,5 @@ We love help and feedback on how we can improve the projects! The recommended wa
 
 If you would like to discuss the project feel free to [contact us at Boot.dev](https://blog.boot.dev/contact). We're most responsive on Discord, but you can also find us on Twitter.
 
-* [Twitter](https://twitter.com/q_vault)
-* [Discord](https://discord.com/invite/HxuxE6Nv)
+* [Twitter](https://twitter.com/bootdotdev)
+* [Discord](https://discord.gg/EEkFwbv)
