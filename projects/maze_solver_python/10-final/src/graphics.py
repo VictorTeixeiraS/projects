@@ -20,8 +20,8 @@ class Window(Frame):
             self.redraw()
         print("window closed...")
 
-    def draw_shape(self, shape, fill_color="black"):
-        shape.draw(self.__canvas, fill_color)
+    def draw_line(self, line, fill_color="black"):
+        line.draw(self.__canvas, fill_color)
 
     def close(self):
         self.__running = False
