@@ -1,6 +1,6 @@
-# SEO Link Analyzer in Python
+# Maze Solver in Python
 
-It's time to put your Python skills to the test and build a real project on your local computer. By the end of this project, you'll have an "SEO link analyzer" that will allow your users to analyze the internal links on a website for [SEO purposes](https://searchengineland.com/guide/what-is-seo). You'll also be able to show off this project on your Github profile and your resume, so do your best work!
+It's time to put your algorithms skills to the test and build and visualize your newfound knowledge by building a maze solver. By the end of this project, you'll have a program that can generate a maze visually and solve it. You'll also be able to show off this project on your Github profile and your resume, so do your best work!
 
 ## About the author, Lane Wagner
 
@@ -10,7 +10,7 @@ Lane is currently the Head of Engineering at a bay-area startup, with experience
 
 ## A note from Lane
 
-Thanks for joining me in this link tracker project! I've been writing Python for over 10 years, and it is such a great fit for a small productivity script like this. Backlinks are the back-bone of SEO on websites around the world, and frequently website owners want to know how well the pages on their site link to the other pages. A healthy amount of backlinks makes your website easy to navigate for the user as well as Google's crawler bot. Our tool will be a command-line script that prints the backlink profile of a website.
+Thanks for joining me in this maze solve project! I've been writing Python for over 10 years, and it is such a great fit for a small app like this. Path-finding algorithms can be hard to understand if you only interact with them through the command line and console output. I think it's really fun to build a graphical app so we can visualize them!
 
 If you get stuck or have questions, I hang out in [Boot.dev's Discord server](https://discord.com/invite/EEkFwbv), and someone from the community or myself would love to answer your questions and get to know you better. Also, feel free to reach out directly on [Twitter](https://twitter.com/wagslane).
 
