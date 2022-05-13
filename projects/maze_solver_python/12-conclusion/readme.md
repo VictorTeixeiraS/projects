@@ -7,10 +7,12 @@ I hope you've enjoyed the project, it's always good to solidify the things you l
 * Add other solving algorithms, like breadth first search or A*
 * Make the visuals prettier, change the colors, etc
 * Mess with the animation settings to make it faster/slower. Maybe make backtracking slow and blazing new paths faster?
-* Add configurations in the app itself using Tkinter buttons and inputs
+* Add configurations in the app itself using Tkinter buttons and inputs to allow users to change maze size, speed, etc
 * Make much larger mazes to solve
-* Allow a user to choose the directions to go next, make it a game
+* Make it a game where there use chooses directions
+* If you made it a game, allow the user to race an algorithm
 * Make it 3 dimensional
+* Time the various algorithms, see which ones are fastest
 
 ## Contact me
 
