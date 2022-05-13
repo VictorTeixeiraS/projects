@@ -37,6 +37,9 @@ class Maze:
             for j in range(self._num_rows):
                 col_cells.append(Cell(self._win))
             self._cells.append(col_cells)
+        for i in range(self._num_cols):
+            for j in range(self._num_rows):
+                self._draw_cell(i, j)
 
     def _reset_cells_visted(self):
         for col in self._cells:
@@ -57,6 +60,7 @@ class Maze:
         x2 = x1 + self._cell_size_x
         y2 = y1 + self._cell_size_y
         self._cells[i][j].draw(x1, y1, x2, y2)
+        self._animate()
 
     def _break_walls_r(self, i, j):
         self._cells[i][j].visited = True
@@ -92,7 +96,6 @@ class Maze:
             # just break out
             if possible_direction_indexes == 0:
                 self._draw_cell(i, j)
-                self._animate()
                 return
 
             # randomly choose the next direction to go
