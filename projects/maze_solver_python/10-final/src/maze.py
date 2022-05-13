@@ -41,17 +41,6 @@ class Maze:
             for j in range(self._num_rows):
                 self._draw_cell(i, j)
 
-    def _reset_cells_visted(self):
-        for col in self._cells:
-            for cell in col:
-                cell.visited = False
-
-    def _animate(self):
-        if self._win is None:
-            return
-        self._win.redraw()
-        time.sleep(0.05)
-
     def _draw_cell(self, i, j):
         if self._win is None:
             return
@@ -61,6 +50,23 @@ class Maze:
         y2 = y1 + self._cell_size_y
         self._cells[i][j].draw(x1, y1, x2, y2)
         self._animate()
+
+    def _animate(self):
+        if self._win is None:
+            return
+        self._win.redraw()
+        time.sleep(0.05)
+
+    def _break_entrance_and_exit(self):
+        self._cells[0][0].has_top_wall = False
+        self._draw_cell(0, 0)
+        self._cells[self._num_cols - 1][self._num_rows - 1].has_bottom_wall = False
+        self._draw_cell(self._num_cols - 1, self._num_rows - 1)
+
+    def _reset_cells_visted(self):
+        for col in self._cells:
+            for cell in col:
+                cell.visited = False
 
     def _break_walls_r(self, i, j):
         self._cells[i][j].visited = True
@@ -123,10 +129,6 @@ class Maze:
 
             # recursively visit the next cell
             self._break_walls_r(next_i, next_j)
-
-    def _break_entrance_and_exit(self):
-        self._cells[0][0].has_top_wall = False
-        self._cells[self._num_cols - 1][self._num_rows - 1].has_bottom_wall = False
 
     # returns True if this is the end cell, OR if it leads to the end cell.
     # returns False if this is a loser cell.
