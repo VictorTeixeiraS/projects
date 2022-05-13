@@ -1,6 +1,6 @@
 from graphics import Window
-import sys
 from maze import Maze
+import sys
 
 
 def main():
