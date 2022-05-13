@@ -63,11 +63,6 @@ class Maze:
         self._cells[self._num_cols - 1][self._num_rows - 1].has_bottom_wall = False
         self._draw_cell(self._num_cols - 1, self._num_rows - 1)
 
-    def _reset_cells_visted(self):
-        for col in self._cells:
-            for cell in col:
-                cell.visited = False
-
     def _break_walls_r(self, i, j):
         self._cells[i][j].visited = True
         while True:
@@ -123,6 +118,11 @@ class Maze:
 
             # recursively visit the next cell
             self._break_walls_r(next_index[0], next_index[1])
+
+    def _reset_cells_visted(self):
+        for col in self._cells:
+            for cell in col:
+                cell.visited = False
 
     # returns True if this is the end cell, OR if it leads to the end cell.
     # returns False if this is a loser cell.
