@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png">
+  <img src="assets/logo2.png">
 </p>
 
 # Boot.dev's Take Home Computer Science Projects
