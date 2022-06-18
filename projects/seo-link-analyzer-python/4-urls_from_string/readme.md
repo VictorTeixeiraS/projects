@@ -16,7 +16,7 @@ We want to write a new function called `get_urls_from_string` in a new file call
 
 ## Virtual environment
 
-I highly recommend using a virtual environment for all your Python projects. It allows you to keep your installations of third party libraries like `lxml` separate for each project. Without `venv`, if you update a version `lxml` in one projet on your computer, it will update it for all your other projects, potentially breaking them!
+I highly recommend using a virtual environment for all your Python projects. It allows you to keep your installations of third party libraries like `lxml` separate for each project. Without `venv`, if you update a version `lxml` in one project on your computer, it will update it for all your other projects, potentially breaking them!
 
 * Create a new virtual environment in your project called `venv` by typing `python3 -m venv venv`
 * Add `venv/` to your [gitignore](https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo/) so it isn't saved as source code
