@@ -5,7 +5,7 @@ In your coding career, you won't have a teacher or boss writing your tests for y
 ## sort_pages
 
 Within the same `report.py` file, create a new function called `sort_pages`. It accepts a [dictionary](https://boot.dev/course/f9a25dfb-3e00-4727-ac78-36de82315355/3afd4fce-5c36-4fa2-837b-f71cb1249331)
-as input, and returns a sort [list](https://boot.dev/course/f9a25dfb-3e00-4727-ac78-36de82315355/6de00b1c-27e5-4602-8f19-be081c6c49a0) of [tuples](https://www.w3schools.com/python/python_tuples.asp).
+as input, and returns a sorted [list](https://boot.dev/course/f9a25dfb-3e00-4727-ac78-36de82315355/6de00b1c-27e5-4602-8f19-be081c6c49a0) of [tuples](https://www.w3schools.com/python/python_tuples.asp).
 
 For example, the following dictionary:
 
