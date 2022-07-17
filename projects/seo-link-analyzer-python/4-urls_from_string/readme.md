@@ -26,7 +26,7 @@ I highly recommend using a virtual environment for all your Python projects. It 
 ## Installing lxml
 
 Now that you're in a virtual environment, let's install lxml there. We want to track our dependencies in our source code, so create a new file called `requirements.txt`. This is the standard way to track dependencies in Python.
-On the first line, type `lxml == 4.7.1`. Which means we are adding `lxml` version `4.7.1` as a dependency. Now install it by typing `pip3 install -r requirements.txt`.
+On the first line, type `lxml == 4.9.1`. Which means we are adding `lxml` version `4.9.1` as a dependency. Now install it by typing `pip3 install -r requirements.txt`.
 
 ## get_urls_from_string
 
