@@ -6,7 +6,7 @@ def print_report(pages):
     for page in pages_list:
         url = page[0]
         count = page[1]
-        print("Found {} internal links to {}".format(count, url))
+        print(f"Found {count} internal links to {url}")
 
 
 # remove_none_values removes all keys from a dictionary

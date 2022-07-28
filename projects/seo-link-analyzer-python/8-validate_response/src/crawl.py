@@ -28,14 +28,12 @@ def crawl_page(base_url, pages):
 def validate_response(resp, url):
     if resp.status_code != 200:
         raise Exception(
-            "{} didn't result in a 200 response code, got {}".format(
-                url, resp.status_code
-            )
+            f"{url} didn't result in a 200 response code, got {resp.status_code}"
         )
 
     # If the content type isn't HTML skip it
     if "text/html" not in resp.headers["content-type"].lower():
-        raise Exception("{} didn't result in an HTML response".format(url))
+        raise Exception(f"{url} didn't result in an HTML response")
 
 
 # get_urls_from_string scans through a string,
@@ -55,7 +53,7 @@ def get_urls_from_string(page_content, base_url):
 # deduplicate URLs which resolve to the same web page
 def normalize_url(url):
     parsed_url = urlparse(url)
-    netloc_path = "{}{}".format(parsed_url.netloc, parsed_url.path)
+    netloc_path = f"{parsed_url.netloc}{parsed_url.path}"
     lowercased = netloc_path.lower()
     if len(lowercased) < 1:
         return lowercased
