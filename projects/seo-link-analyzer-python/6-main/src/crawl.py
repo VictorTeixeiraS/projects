@@ -21,7 +21,7 @@ def get_urls_from_string(page_content, base_url):
 # deduplicate URLs which resolve to the same web page
 def normalize_url(url):
     parsed_url = urlparse(url)
-    netloc_path = "{}{}".format(parsed_url.netloc, parsed_url.path)
+    netloc_path = f"{parsed_url.netloc}{parsed_url.path}"
     lowercased = netloc_path.lower()
     if len(lowercased) < 1:
         return lowercased
