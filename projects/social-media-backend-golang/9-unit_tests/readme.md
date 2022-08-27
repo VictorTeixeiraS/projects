@@ -77,7 +77,7 @@ for _, tt := range tests {
 }
 ```
 
-If `e.Errorf()` is ever called, `go test` will fail and print the error.
+If `t.Errorf()` is ever called, `go test` will fail and print the error.
 
 ## Assignment
 
