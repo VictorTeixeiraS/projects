@@ -15,6 +15,6 @@ For now, your function should:
 
 Remember to use `try/catch` as appropriate for anything that *could* result in an error!
 
-## main.py
+## main.js
 
 Import `crawlPage` into your main function, and call it with the `base_url` passed in and an empty dictionary. Give your program a shot! It should print some HTML that it fetched from the internet!
