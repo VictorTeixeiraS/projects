@@ -4,7 +4,11 @@ Next we need to break down enough walls that the maze is fun and challenging whi
 
 ## Seed your randomness
 
-We will be using randomness to generate our maze. It can be tough to debug your application if everytime you run it it behaves differently. I recommend adding another optional parameter to the `Maze` class called `seed` that defaults to `None`. Then, in your constructor, if the `seed` isn't none you call [`random.seed(seed)`](https://docs.python.org/3/library/random.html#random.seed). Seeding with a fixed number, say 10, will ensure you always get the same random numbers. If you want randomness, just leave the parameter blank in `main`.
+We will be using random number generation to create our maze, that way it's fun and different each time.
+
+However, it can be tough to debug your application if each time you run it, it behaves slightly differently. I recommend adding another optional parameter to the `Maze` class constructor called `seed` that defaults to `None`. Then, in your constructor, if the `seed` isn't `None` you call [`random.seed(seed)`](https://docs.python.org/3/library/random.html#random.seed).
+
+The purpose of providing a fixed seed, say `0`, is that it will ensure you *always* get the same "random" numbers. Once you're done debugging and want randomness for your application, just can just leave the `seed` parameter blank in `main`.
 
 ## A Cell's visited data member
 

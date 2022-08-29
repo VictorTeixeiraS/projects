@@ -1,10 +1,10 @@
 # Database
 
-Let's build a simple database package. Our database package will simply read and save our user's data in a `JSON` file on disk. If this were a database project we'd do something a bit more scalable!
+Let's build a database package. Our database package will simply read and save our user's data in a `JSON` file on disk. If this were a production-scale project we'd do something a bit more scalable, like use a PostgresQL database instead!
 
 ## Internal folder
 
-In go, [packages](https://blog.boot.dev/golang/how-to-separate-library-packages-in-go/) that aren't meant to be used by other modules are stored in an `internal` folder. The Go toolchain won't allow modules that don't contain that `internal` folder to use that code, so it's good practice to scope packages accordingly.
+In Go, [packages](https://blog.boot.dev/golang/how-to-separate-library-packages-in-go/) that aren't meant to be used by other modules are stored in an `internal` folder. The Go toolchain won't allow modules that don't contain that `internal` folder to use that code, so it's good practice to scope packages accordingly.
 
 Create an `internal` directory at the root of your project, then add a `database` directory with a `database.go` file. Make sure to add `package database` at the top of that file.
 
