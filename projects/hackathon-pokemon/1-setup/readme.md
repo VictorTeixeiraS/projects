@@ -4,7 +4,7 @@ Welcome to Boot.dev's September 2022 Hackathon!!! We're pumped you've joined us.
 
 In this project you'll be building a program using the [PokeAPI dataset](https://github.com/PokeAPI/pokeapi), a giant dataset with tons of information about the Pokemon universe!
 
-![pokeapi](https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi.svg?sanitize=true
+![pokeapi](https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi.svg?sanitize=true)
 
 Make sure you've joined the [Boot.dev Discord](https://discord.gg/EEkFwbv) and that you've read the [#start-here channel](https://discord.com/channels/551921866173054977/920160977788502036) and have synced your Boot.dev account.
 

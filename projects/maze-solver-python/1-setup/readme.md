@@ -7,6 +7,12 @@ Before we dive into the project, let's make sure you are all set up properly. Yo
 3. [Python 3 installed](https://www.python.org/downloads/).
 4. You shouldn't need to install any dependencies for this, the graphical [Tkinter](https://docs.python.org/3/library/tkinter.html) package we'll be using comes bundled with Python 3.
 
+## What we are building
+
+We'll be building this awesome maze generator and solver! By the end, your code will be rendering mazes like this one:
+
+![maze](https://i.imgur.com/RehzDga.gif)
+
 ## Google is your friend!
 
 Do not be afraid to use the internet to find help with this project. This is a *semi-guided* project, which means you will be expected to figure some things out on your own, and look up some documentation as you need it. This is good practice for what it's like to work in a real developer job.

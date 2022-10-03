@@ -4,13 +4,13 @@ By the end of this step you'll have a working HTTP server! Don't worry, it's not
 
 ## Boilerplate
 
-You'll need a `main.go` file. It should be part of `package main` and have a main function. You should be able to run `go build` with just that and get a runnable program that does nothing but exit with a succesful status code.
+You'll need a `main.go` file. It should be part of `package main` in the root of your project and have a `main()` function. You should be able to run `go build` from the root of your project with just that file and get a runnable program that does nothing but exit with a successful status code.
 
 Next, you'll need to [create a Go module](https://golang.org/doc/tutorial/create-module) at the root of your project. You can do this by:
 
 `go mod init MODULE_NAME`
 
-I recommend naming the module by it's remote git locaiton (you should store all your projects in Git!). For example, my GitHub name is `wagslane` so my module name might be `github.com/wagslane/http_server_golang`.
+I recommend naming the module by it's remote git location (you should store all your projects in Git!). For example, my GitHub name is `wagslane` so my module name might be `github.com/wagslane/http_server_golang`.
 
 ## The serve mux
 
