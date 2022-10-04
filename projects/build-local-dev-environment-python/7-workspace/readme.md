@@ -24,7 +24,7 @@ Run the "list" command:
 ls
 ```
 
-You should see all the files and folders in your home directory.
+You should see all the files and folders in your home directory, if there are any.
 
 ### 3. Create your "workspace" folder:
 
@@ -33,6 +33,8 @@ Run a "make directory" command to create a "workspace" folder:
 ```bash
 mkdir workspace
 ```
+
+You can make sure it was created successfully by running `ls` again.
 
 ### 4. Navigate into the workspace folder
 

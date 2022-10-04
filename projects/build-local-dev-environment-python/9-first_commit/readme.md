@@ -1,6 +1,6 @@
 # Making your First Commit
 
-When you're writing code and using git to track your changes, you make changes via [commits](https://github.com/git-guides/git-commit). Ideally you will keep your commits small. For example, you can make a new commit and push it up to GitHub each time you:
+When using git to manage your code, you make changes to your code via [commits](https://github.com/git-guides/git-commit). Good commits tend to be small. For example, you might create a commit and push it up to GitHub each time you:
 
 * Add a new feature
 * Fix a new bug
@@ -38,7 +38,7 @@ First, let's [stage](https://www.git-tower.com/help/guides/working-copy/stage-ch
 git add .
 ```
 
-The "." tells git to stage *all* the changes in the directory and all subdirectories. If you only wanted to stage *specific* files, you could list the files one by one. I use the "." to stage *everything in the repo* 99% of the time. If you need git to ignore files in your project, you can use a [.gitignore file](https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo).
+The "." tells git to stage *all* the changes in the directory and all subdirectories. If you only wanted to stage *specific* files, you could list the files one by one. I use the "." to stage *everything in the repo* 99% of the time. If you need git to ignore files in your project, you can use a [.gitignore file](https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo), which we'll cover later.
 
 ## Commit the change
 
@@ -52,7 +52,7 @@ git commit -m "update readme with a description"
 
 ## Push the change to GitHub
 
-Now that it's been committed locally, you should notice that your source control tab on the left no longer has a blue notification - all your changes are committed! However, the change hasn't been pushed up to GitHub yet for safekeeping. Run this command:
+Now that your change been committed *locally*, you should notice that your source control tab on the left no longer has a blue notification - all your changes are committed! However, the commit hasn't been pushed up to GitHub yet for safekeeping. Run this command:
 
 ```bash
 git push origin main

@@ -46,6 +46,6 @@ If it doesn't say `bash`, you can use the icons next to it to change it. If you 
 
 ## Run a command
 
-Now that you've got VS Code open with a `bash` or `zsh` terminal, type `ls` in the command prompt and press `enter`. You should get back a list of all the files in your current directory! If that works, move onto the next step.
+Now that you've got VS Code open with a `bash` or `zsh` terminal, type `pwd` in the command prompt and press `enter`. `pwd` stands for "print working directory", so you should get back the path of your working directory. If you do, you're good to move on!
 
 If you're stuck, reach out in the Discord for help.

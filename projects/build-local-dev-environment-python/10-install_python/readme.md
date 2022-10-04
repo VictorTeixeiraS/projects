@@ -10,7 +10,11 @@ Run this command to install pyenv with [webi](https://webinstall.dev/pyenv/).
 curl -sS https://webi.sh/pyenv | sh
 ```
 
-Then close your terminal (trash icon in the top-right of the terminal) and re-open it (ctrl + `).
+Then close your terminal (trash icon in the top-right of the terminal) and re-open it with:
+
+```
+ctrl + `
+```
 
 ### Have trouble installing pyenv on Linux or Windows (WSL)?
 
@@ -52,4 +56,6 @@ Finally, make sure that it worked:
 python --version
 ```
 
-**If it worked move to the next step.**
+You should get back a Python version.
+
+**If it worked, move to the next step.**

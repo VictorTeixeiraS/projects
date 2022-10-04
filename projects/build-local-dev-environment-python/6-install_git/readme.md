@@ -47,7 +47,7 @@ If it worked, the `git version` command should now also work.
 Run this command in your terminal to use [webi](https://webinstall.dev/gh/) to install the Github CLI:
 
 ```bash
-https://webinstall.dev/gh/
+curl -sS https://webi.sh/gh | sh
 ```
 
 ## Use the Github CLI to Configure Git to use your GitHub Credentials

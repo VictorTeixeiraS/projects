@@ -10,7 +10,7 @@ Create a directory in your `bookbot` project called `books` and then add `franke
 
 ## Use a .gitignore file to ignore the "books" directory
 
-We don't want to save entire books to our the source code for bookbot. Imagine if Microsoft word's source code included all the *documents* it could operate on. Generally speaking, git is for *code*, not for *data*.
+We don't want to save entire book in our source code. Imagine if Microsoft Word's source code included all the *documents* it could operate on. Generally speaking, git is for *code*, not for *data*.
 
 Create a `.gitignore` file in the root of your project and add this text to it:
 
@@ -22,7 +22,7 @@ You should see the filename turn dark gray in your VS Code file explorer. Now wh
 
 ## Read the book
 
-Change `main.py` so that instead of printing "hello world", it reads the contents of the frankenstein text and prints it all to the console.
+Change `main.py` so that instead of printing "hello world", it reads the contents of the "frankenstein.txt" and prints it *all* to the console.
 
 ## Hints
 

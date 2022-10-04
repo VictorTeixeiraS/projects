@@ -54,6 +54,6 @@ If you see "bookbot", you're all set!
 
 ## Re-open VS Code in the "bookbot" directory
 
-VS Code's tooling, specifically it's Git tooling, works best if you open VS Code to the root of the repository you're working on. In the VS Code menu, use `file -> open folder` then navigate to and open your "bookbot" folder. If all goes well, you should see a "README.md" file in your file explorer on the left.
+VS Code's tooling, specifically it's Git tooling, works best if you open VS Code to the root of the repository you're working on. In the VS Code menu, use `file -> open folder` then navigate to and open your "bookbot" directory (which is in `~/workspace/github.com/your_gh_username/bookbot`). If all goes well, you should see a "README.md" file in your file explorer on the left.
 
 **You can move on to the next step.**
