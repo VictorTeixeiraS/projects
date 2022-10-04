@@ -1,8 +1,9 @@
 # Welcome
 
-Welcome to your first project! We're going to build "Book Bot" - a Python program that can analyze an entire book's text and print out an interesting statistical report.
+Welcome to your first project! We're going to build "Book Bot" - a Python program that can analyze an entire book's text and print out an interesting statistical report. You'll have a few things by the time we're done:
 
-By the end of the project you'll have something to show off on your resume and Github profile. It will stand as proof that you know how to build a working project *on your own computer*.
+* A professional Python development environment on your local computer
+* A Python project on your personal GitHub account that will serve as a part of your professional portfolio
 
 ## If you get stuck, you have support on Discord
 
