@@ -1,10 +1,10 @@
 # Installing Windows Subsystem for Linux
 
-*If you're on Mac or Linux, or already have WSL2 configured, you can skip this step.*
+*If you're on Mac OS or Linux, or already have WSL 2 configured, you can skip this step.*
 
 The built-in Windows command line (which we'll explain more later) is *terrible*. It's *so bad* that if you're on Windows we're just going to have you install WSL 2 ([Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about)). This will allow you to use your normal Windows desktop, but *also* have a Linux command line, operating system, and filesystem for development.
 
-WSL2 was a *huge* step forward for developers on Windows, and in my opinion is a much better experience than dual-booting. Don't worry, WSL is a Microsoft product that's built to work with Windows. It won't mess up your current Windows installation.
+WSL 2 was a *huge* step forward for developers on Windows, and in my opinion is a much better experience than dual-booting. Don't worry, WSL is a Microsoft product that's built to work with Windows. It won't mess up your current Windows installation.
 
 Here are a couple of things to keep in mind about WSL 2:
 

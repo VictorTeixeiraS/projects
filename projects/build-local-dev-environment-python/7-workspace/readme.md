@@ -8,7 +8,7 @@ Many developers spend years haphazardly writing code and maintaining projects al
 
 ### 1. Navigate to your home directory
 
-Inside your terminal run the "change directory" command to switch to your home directory:
+Inside your terminal run the "change directory" command to switch to your [home directory](https://wiki.debian.org/home_directory):
 
 ```bash
 cd ~/

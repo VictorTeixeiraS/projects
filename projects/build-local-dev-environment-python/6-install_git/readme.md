@@ -44,20 +44,6 @@ If it worked, the `git version` command should now also work.
 
 ## Install the Github CLI
 
-### Install the Github CLI on Linux (and WSL)
-
-Run this command in your terminal to install the [Github CLI tools](https://github.com/cli/cli):
-
-```bash
-curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
-&& sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
-&& echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
-&& sudo apt update \
-&& sudo apt install gh -y
-```
-
-### Install the Github CLI on Mac OS
-
 Run this command in your terminal to use [webi](https://webinstall.dev/gh/) to install the Github CLI:
 
 ```bash
