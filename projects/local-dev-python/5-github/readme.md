@@ -14,7 +14,7 @@ It's important to understand that Git and GitHub are *not the same*! Git is an o
 
 ## Create a GitHub Account
 
-IF you don't have a GitHub account yet, create one [here](https://github.com/). You will likely use this account *heavily* for the rest of your career as a developer, so add a good profile picture and use a sensible username.
+If you don't have a GitHub account yet, create one [here](https://github.com/). You will likely use this account *heavily* for the rest of your career as a developer, so add a good profile picture and use a sensible username.
 
 ## Create a GitHub repository for this project
 

@@ -46,7 +46,7 @@ If it worked, the `git version` command should now also work.
 
 ### Install the Github CLI on Linux (and WSL)
 
-Run this command in your terminal to install the Github CLI tools:
+Run this command in your terminal to install the [Github CLI tools](https://github.com/cli/cli):
 
 ```bash
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
