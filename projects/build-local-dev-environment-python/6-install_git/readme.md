@@ -50,6 +50,12 @@ Run this command in your terminal to use [webi](https://webinstall.dev/gh/) to i
 curl -sS https://webi.sh/gh | sh
 ```
 
+Then close your terminal (trash icon in the top-right of the terminal) and re-open it with:
+
+```
+ctrl + `
+```
+
 ## Use the Github CLI to Configure Git to use your GitHub Credentials
 
 Run this command in your terminal:
@@ -62,6 +68,17 @@ Follow the instructions.
 
 * Use `HTTPS` as your preferred protocol.
 * Enter `Y` when asked if you want to authenticate git with your Github credentials.
+
+## Configure Git to use your Github credentials
+
+Run this command in your terminal:
+
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "username"
+```
+
+Replace "you@exmaple.com" with the email you used to sign up for GitHub, and replace "username" with your GitHub username. 
 
 ## Sign in to VS Code with Github
 
