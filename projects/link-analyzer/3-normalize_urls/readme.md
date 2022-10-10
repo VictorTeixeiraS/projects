@@ -46,7 +46,7 @@ In test driven development (TDD), you typically follow this flow:
 2. Write the tests
 3. Write the code that passes the tests
 
-So, create a file called `crawl.py` and create a function called `normalizeURL`. Make sure to [export it](https://www.sitepoint.com/understanding-module-exports-exports-node-js/) from the module (file). I use the following syntax at the bottom of a JavaScript file to export something:
+So, create a file called `crawl.js` and create a function called `normalizeURL`. Make sure to [export it](https://www.sitepoint.com/understanding-module-exports-exports-node-js/) from the module (file). I use the following syntax at the bottom of a JavaScript file to export something:
 
 ```js
 modules.exports = {

@@ -31,7 +31,7 @@ Finally, pack the canvas again, just like you did in the constructor.
 
 ## Window class draw_line() method
 
-We need a `draw_line` method on our `Window` class. Tt should take an instance of a `Line` and a `fill_color` as inputs, then call the `Line`'s `draw()` method.
+We need a `draw_line` method on our `Window` class. It should take an instance of a `Line` and a `fill_color` as inputs, then call the `Line`'s `draw()` method.
 
 ## Update you main function to test your changes
 

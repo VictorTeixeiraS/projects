@@ -1,6 +1,6 @@
 # Installing Python
 
-We're going to use [webi](https://webinstall.dev/pyenv/) to install [pyenv](https://github.com/pyenv/pyenv). `pyenv` makes it easy to mange your Python versions - we want to be on the latest version!
+We're going to use [webi](https://webinstall.dev/pyenv/) to install [pyenv](https://github.com/pyenv/pyenv). `pyenv` makes it easy to manage your Python versions - we want to be on the latest version!
 
 ## Install pyenv with webi
 
@@ -14,26 +14,6 @@ Then close your terminal (trash icon in the top-right of the terminal) and re-op
 
 ```
 ctrl + `
-```
-
-### Have trouble installing pyenv on Linux or Windows (WSL)?
-
-If you're having trouble, try installing the required build tools, then re-running the webi installer:
-
-```bash
-sudo apt update
-```
-
-```bash
-sudo apt install -y build-essential zlib1g-dev libssl-dev
-```
-
-```bash
-sudo apt install -y libreadline-dev libbz2-dev libsqlite3-dev libffi-dev
-```
-
-```bash
-curl -sS https://webi.sh/pyenv | sh
 ```
 
 ## Install Python 3
@@ -59,3 +39,27 @@ python --version
 You should get back a Python version.
 
 **If it worked, move to the next step.**
+
+### Having trouble installing pyenv or Python on Linux or Windows (WSL)?
+
+If you're having trouble, try installing the required build tools, then re-running the webi/python installer:
+
+```bash
+sudo apt update
+```
+
+```bash
+sudo apt install -y build-essential zlib1g-dev libssl-dev
+```
+
+```bash
+sudo apt install -y libreadline-dev libbz2-dev libsqlite3-dev libffi-dev
+```
+
+```bash
+curl -sS https://webi.sh/pyenv | sh
+```
+
+```bash
+pyenv install -v 3.10.7
+```

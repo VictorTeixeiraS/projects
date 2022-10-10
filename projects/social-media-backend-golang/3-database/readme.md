@@ -12,7 +12,7 @@ Create an `internal` directory at the root of your project, then add a `database
 
 ### Client type
 
-Your database package needs to [export](https://www.ardanlabs.com/blog/2014/03/exportedunexported-identifiers-in-go.html) a `Client` struct type. All the database interactions our API will use will be methods on that struct. The struct only needs a single field to hold the file path to the database. For example, I used `./db.json` in the same directory.
+Your database package needs to [export](https://go.dev/tour/basics/3) a `Client` struct type. All the database interactions our API will use will be methods on that struct. The struct only needs a single field to hold the file path to the database. For example, I used `./db.json` in the same directory.
 
 ## NewClient function
 
