@@ -1,6 +1,6 @@
 # Cloning your project
 
-*If you already know you to clone your GitHub repo and open it in VS Code you can skip this step.*
+*If you already know how to clone your GitHub repo and open it in VS Code you can skip this step.*
 
 Your environment is ready to go, and your project exists on GitHub, now it's time to [clone](https://github.com/git-guides/git-clone) down the repo on your machine.
 

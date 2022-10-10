@@ -2,7 +2,7 @@
 
 `npm` stands for "Node Package Manager". By installing Node.js, you've gained two new commands:
 
-* `node` - The JavaScript runtime. This will let you run you JavaScript files.
+* `node` - The JavaScript runtime. This will let you run your JavaScript files.
 * `npm` - The package manager. This manages dependencies, meta information, and allows you to specify "scripts" to run.
 
 **Most JS devs don't run the `node` command directly, they use it within an npm script.**
