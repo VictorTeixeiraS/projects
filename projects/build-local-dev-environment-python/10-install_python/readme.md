@@ -49,11 +49,7 @@ sudo apt update
 ```
 
 ```bash
-sudo apt install -y build-essential zlib1g-dev libssl-dev
-```
-
-```bash
-sudo apt install -y libreadline-dev libbz2-dev libsqlite3-dev libffi-dev
+sudo apt install -y build-essential zlib1g-dev libssl-dev libreadline-dev libbz2-dev libsqlite3-dev libffi-dev tk-dev
 ```
 
 ```bash
