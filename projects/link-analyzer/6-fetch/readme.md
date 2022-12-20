@@ -1,6 +1,6 @@
 # Crawl the page
 
-Let's start actually crawling real webpages! For these remaining steps, you'll need a website you can crawl. Preferably a small one with less than 100 pages so the crawling doesn't take all day. You can use my personal blog, `https://wagslane.dev` if you don't have another in mind.
+Let's start crawling real web pages! For these remaining steps, you'll need a website you can crawl. Preferably a small one with less than 100 pages so the crawling doesn't take all day. You can use my personal blog, `https://wagslane.dev` if you don't have another in mind.
 
 ## crawlPage(base_url, url, pages)
 

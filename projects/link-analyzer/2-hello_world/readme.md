@@ -3,7 +3,7 @@
 `npm` stands for "Node Package Manager". By installing Node.js, you've gained two new commands:
 
 * `node` - The JavaScript runtime. This will let you run your JavaScript files.
-* `npm` - The package manager. This manages dependencies, meta information, and allows you to specify "scripts" to run.
+* `npm` - The package manager. This manages dependencies, metadata, and allows you to specify "scripts" to run.
 
 **Most JS devs don't run the `node` command directly, they use it within an npm script.**
 
@@ -15,7 +15,7 @@ Start a new node project in the root of your project by typing `npm init` and fo
 console.log('hello world')
 ```
 
-to that file. This will be the entrypoint.
+to that file. This will be the entry point.
 
 Next, edit the `package.json` file that was created during `npm init`. The scripts section should have something like:
 

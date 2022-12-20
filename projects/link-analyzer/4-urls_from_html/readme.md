@@ -20,7 +20,7 @@ We want to write a new function called `getURLsFromHTML` in the same `crawl.js` 
 npm install jsdom
 ```
 
-This will install `jsdom` as a "dependency" (as opposed to `jest` which is a "devDependency"). "Dev dependencies" aren't required to run your application, they're only required for development (like testing). Regular dependencies are required to run the program itself.
+This will install `jsdom` as a "dependency" (as opposed to `jest` which is a "devDependency"). "Dev dependencies" are not required to run your application, they're only required for development (like testing). Regular dependencies are required to run the program itself.
 
 I'll try not to give too many hints: you should go read the JSDOM docs! That said here are a few:
 
@@ -36,13 +36,13 @@ In HTML, "a" tags are links. e.g:
 
 ## getURLsFromHTML()
 
-`getURLsFromHTML(htmlBody, baseURL)` takes 2 arguments. The first is an HTML string like we discussed earlier, the second is the root URL of the website we're crawling. This will allow us to rewrite [relative URLs into absolute URLs](https://www.seoclarity.net/resources/knowledgebase/difference-relative-absolute-url-15325/).
+`getURLsFromHTML(htmlBody, baseURL)` takes 2 arguments. The first is an HTML string as we discussed earlier, while the second is the root URL of the website we're crawling. This will allow us to rewrite [relative URLs into absolute URLs](https://www.seoclarity.net/resources/knowledgebase/difference-relative-absolute-url-15325/).
 
 It returns an *un-normalized* array of all the URLs found within the HTML.
 
 ## Write some tests before writing your code
 
-* Test that relative urls are converted to absolute urls.
-* Test to be sure you find *all* the a tags in a body of html
+* Test that relative URLs are converted to absolute URLs.
+* Test to be sure you find *all* the `<a>` tags in a body of HTML
 
 Then go ahead and implement the function itself!

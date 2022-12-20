@@ -1,6 +1,6 @@
-# Test driven development
+# Test-driven development
 
-"Test driven development" is a popular method of writing software. The idea is that you write tests for your code *first*, then you write the code that gets the tests to pass. We're going to approach this project using *a bit of* TDD.
+"Test-driven development" is a popular method of writing software. The idea is that you write tests for your code *first*, then you write the code that gets the tests to pass. We're going to approach this project using *a bit of* TDD.
 
 ## Install Jest
 
@@ -72,7 +72,7 @@ const { normalizeURL } = require('./crawl.js')
 
 ## Write some tests
 
-Write a few tests! Remember, this function should take a single URL (string) and return the normalized version of the URL as a string. This will help us later on detect whether two different URLs are actually the same *web page*, which is all our users care about.
+Write a few tests! Remember, this function should take a single URL (string) and return the normalized version of the URL as a string. This will help us later to detect whether two different URLs are the same *web page*, which is all our users care about.
 
 Try to test all the [edge-cases](https://en.wikipedia.org/wiki/Edge_case) you can think of.
 

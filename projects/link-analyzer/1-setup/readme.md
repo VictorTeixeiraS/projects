@@ -20,7 +20,7 @@ I recommend NVM because it allows you to have multiple installations of Node.js 
 18.7.0
 ```
 
-This allows you to simply type `nvm use` in your cli while in the root of your project to activate the correct version of node! You may get an installation command to run if you don't yet have that version of node, but it's just another one-liner.
+This allows you to simply type `nvm use` in your CLI while in the root of your project to activate the correct version of node! You may get an installation command to run if you don't yet have that version of node, but it's just another one-liner.
 
 Check to make sure you've activated the correct version of `node` by typing:
 

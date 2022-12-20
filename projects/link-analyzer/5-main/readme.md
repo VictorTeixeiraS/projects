@@ -8,7 +8,7 @@ Remember, you can run the program itself using `npm`:
 npm run start BASE_URL
 ```
 
-Where `BASE_URL` is the root URL of the website we want to crawl. For example, you can test using my personal blog if you want, `https://wagslane.dev`.
+Where `BASE_URL` is the root URL of the website we want to crawl. For example, you can test with my blog if you want: `https://wagslane.dev`.
 
 Create a main function and call it.
 
