@@ -33,6 +33,6 @@ Finally, pack the canvas again, just like you did in the constructor.
 
 We need a `draw_line` method on our `Window` class. It should take an instance of a `Line` and a `fill_color` as inputs, then call the `Line`'s `draw()` method.
 
-## Update you main function to test your changes
+## Update your main function to test your changes
 
 Draw a few lines using your new methods. You'll need to do the drawing after you've created an instance of a `Window`, but before you call `wait_for_close()`.
