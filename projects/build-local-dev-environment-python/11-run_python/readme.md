@@ -18,6 +18,14 @@ Run your program:
 python main.py
 ```
 
+*Note* You may need to use `python3` instead of `python` depending on your system.
+
+```bash
+python3 main.py
+```
+
+
+
 If your code printed "hello world" to the console, pat yourself on the back! You've got a professional Python development environment configured that will serve you well for years to come.
 
 *You can move to the next step.*

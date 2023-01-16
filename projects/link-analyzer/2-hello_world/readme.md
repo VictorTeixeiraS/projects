@@ -9,7 +9,7 @@
 
 ## npm init
 
-Start a new node project in the root of your project by typing `npm init` and following the prompts. Next, add a `main.js` file to the root of your project, and for now just add a simple:
+Start a new node project by typing `npm init`. This command will prompt you with a series of questions. For this project, you can either press enter for the recommended defaults or follow the prompts. Once you have completed the `npm init` process, add a `main.js` file to the root of your project. For now, you can add a simple statement.
 
 ```js
 console.log('hello world')
@@ -36,3 +36,7 @@ npm start
 And you should see your "hello world" message logged to the console!
 
 ## .gitignore
+
+As we learned in previous projects, a `.gitignore` file is used to tell Git which files or folders to ignore when committing changes to a repository. This is useful for ignoring files that are specific to your local development environment or files that should not be tracked in the repository, such as compiled files or sensitive information.
+
+Create a `.gitignore` file at the project root (with the leading period). Have git ignore the `node_modules/` directory.
