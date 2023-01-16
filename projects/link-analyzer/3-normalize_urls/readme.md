@@ -49,7 +49,7 @@ In test driven development (TDD), you typically follow this flow:
 So, create a file called `crawl.js` and create a function called `normalizeURL`. Make sure to [export it](https://www.sitepoint.com/understanding-module-exports-exports-node-js/) from the module (file). I use the following syntax at the bottom of a JavaScript file to export something:
 
 ```js
-modules.exports = {
+module.exports = {
   normalizeURL
 }
 ```
