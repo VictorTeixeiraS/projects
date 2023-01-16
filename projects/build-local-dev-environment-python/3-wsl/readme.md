@@ -49,7 +49,7 @@ You should now have a new WSL-ready VS Code editor! You can close the other VS C
 
 If you have issues, reach out to us for help in the Discord. You can also poke around the [official WSL tutorial](https://learn.microsoft.com/en-us/windows/wsl/install) and the official [WSL-Remote VS Code plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) tutorial.
 
-### Troubleshooting help
+### Troubleshooting: "A required feature is not installed"
 
 Depending on the system you are working on you may run into an error telling you *A required feature is not installed* when attempting to start the virtual machine. To fix this you will need to enable Hyper-V (Virtualization). You can find this in your windows features. You will need both Hyper-V Management Tools, and Hyper-V Platform enabled. If you are still having trouble, ask for help on the Boot.dev Discord.
 

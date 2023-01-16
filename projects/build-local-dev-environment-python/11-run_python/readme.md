@@ -24,8 +24,6 @@ python main.py
 python3 main.py
 ```
 
-
-
 If your code printed "hello world" to the console, pat yourself on the back! You've got a professional Python development environment configured that will serve you well for years to come.
 
 *You can move to the next step.*
