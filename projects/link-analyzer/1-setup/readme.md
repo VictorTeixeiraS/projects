@@ -29,7 +29,7 @@ node --version
 # Prints: v18.7.0
 ```
 
-## A full walkthrough of this project
+## A video walkthrough of this project
 
 *I recommend only using this video when you get super stuck. Try to build the project on your own!*
 
