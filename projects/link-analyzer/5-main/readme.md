@@ -1,6 +1,6 @@
 # Main
 
-Let's get to work on the actual application! Our program takes as a [command line argument](https://nodejs.dev/en/learn/nodejs-accept-arguments-from-the-command-line) the website URL we want to crawl (or at least the page we want to start from)
+Let's get to work on the actual application! Our program takes as a [command line argument](https://nodejs.dev/en/learn/accept-input-from-the-command-line-in-nodejs/) the website URL we want to crawl (or at least the page we want to start from)
 
 Remember, you can run the program itself using `npm`:
 
