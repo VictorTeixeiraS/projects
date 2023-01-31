@@ -5,17 +5,25 @@ import (
 	"fmt"
 	"os"
 	"strings"
+
+	"github.com/bootdotdev/courses/projects/pokedexcli/internal/pokeapi"
 )
 
 const exitCommandSlug = "exit"
 
-func startRepl() {
+type config struct {
+	pokeapiClient pokeapi.Client
+	nextListURL   *string
+	prevListURL   *string
+}
+
+func startRepl(cfg *config) {
 	reader := bufio.NewScanner(os.Stdin)
 	printPrompt()
 	for reader.Scan() {
 		text := cleanInput(reader.Text())
 		if command, exists := getCommands()[text]; exists {
-			err := command.callback()
+			err := command.callback(cfg)
 			if err != nil {
 				fmt.Println(err)
 			}
@@ -28,7 +36,7 @@ func startRepl() {
 }
 
 func printPrompt() {
-	fmt.Print(" Pokedex > ")
+	fmt.Print("Pokedex > ")
 }
 
 func printUnknown(text string) {
@@ -44,7 +52,7 @@ func cleanInput(text string) string {
 type cliCommand struct {
 	name        string
 	description string
-	callback    func() error
+	callback    func(*config) error
 }
 
 func getCommands() map[string]cliCommand {
@@ -53,6 +61,16 @@ func getCommands() map[string]cliCommand {
 			name:        "help",
 			description: "Displays a help message",
 			callback:    commandHelp,
+		},
+		"list": {
+			name:        "list",
+			description: "List a batch of Pokemon",
+			callback:    commandList,
+		},
+		"listprev": {
+			name:        "listprev",
+			description: "List the last batch of pokemon",
+			callback:    commandListPrev,
 		},
 		"exit": {
 			name:        "exit",

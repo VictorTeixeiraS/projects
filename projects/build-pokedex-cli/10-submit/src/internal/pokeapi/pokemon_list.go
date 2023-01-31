@@ -7,7 +7,7 @@ import (
 )
 
 // ListPokemon -
-func (c *Client) ListPokemon(nextURL *string) ([]Pokemon, *string, error) {
+func (c *Client) ListPokemon(nextURL *string) ([]Pokemon, *string, *string, error) {
 	url := baseURL + "/pokemon"
 	if nextURL != nil {
 		url = *nextURL
@@ -15,25 +15,25 @@ func (c *Client) ListPokemon(nextURL *string) ([]Pokemon, *string, error) {
 
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
-		return nil, nil, err
+		return nil, nil, nil, err
 	}
 
 	resp, err := c.httpClient.Do(req)
 	if err != nil {
-		return nil, nil, err
+		return nil, nil, nil, err
 	}
 	defer resp.Body.Close()
 
 	dat, err := io.ReadAll(resp.Body)
 	if err != nil {
-		return nil, nil, err
+		return nil, nil, nil, err
 	}
 
 	pokemonResp := RespListPokemon{}
 	err = json.Unmarshal(dat, &pokemonResp)
 	if err != nil {
-		return nil, nil, err
+		return nil, nil, nil, err
 	}
 
-	return pokemonResp.Results, pokemonResp.Next, nil
+	return pokemonResp.Results, pokemonResp.Next, pokemonResp.Previous, nil
 }
