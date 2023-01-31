@@ -64,7 +64,7 @@ func getCommands() map[string]cliCommand {
 		},
 		"list": {
 			name:        "list",
-			description: "List a batch of Pokemon",
+			description: "List the next batch of Pokemon",
 			callback:    commandList,
 		},
 		"listprev": {
