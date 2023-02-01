@@ -12,47 +12,54 @@ import (
 const exitCommandSlug = "exit"
 
 type config struct {
-	pokeapiClient pokeapi.Client
-	nextListURL   *string
-	prevListURL   *string
+	pokeapiClient     pokeapi.Client
+	nextLocationsURL  *string
+	prevLocationsURL  *string
+	allShallowPokemon *pokeapi.RespShallowPokemon
 }
 
 func startRepl(cfg *config) {
 	reader := bufio.NewScanner(os.Stdin)
-	printPrompt()
-	for reader.Scan() {
-		text := cleanInput(reader.Text())
-		if command, exists := getCommands()[text]; exists {
-			err := command.callback(cfg)
+	for {
+		fmt.Print("Pokedex > ")
+		reader.Scan()
+
+		words := cleanInput(reader.Text())
+		if len(words) == 0 {
+			continue
+		}
+
+		commandName := words[0]
+		args := []string{}
+		if len(words) > 1 {
+			args = words[1:]
+		}
+
+		command, exists := getCommands()[commandName]
+		if exists {
+			err := command.callback(cfg, args...)
 			if err != nil {
 				fmt.Println(err)
 			}
+			continue
 		} else {
-			printUnknown(text)
+			fmt.Println("Unknown command")
+			continue
 		}
-
-		printPrompt()
 	}
 }
 
-func printPrompt() {
-	fmt.Print("Pokedex > ")
-}
-
-func printUnknown(text string) {
-	fmt.Println(text, ": command not found")
-}
-
-func cleanInput(text string) string {
+func cleanInput(text string) []string {
 	output := strings.TrimSpace(text)
 	output = strings.ToLower(output)
-	return output
+	words := strings.Split(output, " ")
+	return words
 }
 
 type cliCommand struct {
 	name        string
 	description string
-	callback    func(*config) error
+	callback    func(*config, ...string) error
 }
 
 func getCommands() map[string]cliCommand {
@@ -62,15 +69,25 @@ func getCommands() map[string]cliCommand {
 			description: "Displays a help message",
 			callback:    commandHelp,
 		},
-		"list": {
-			name:        "list",
-			description: "List the next batch of Pokemon",
-			callback:    commandList,
+		"desc": {
+			name:        "desc <pokemon_name>",
+			description: "Get details about a Pokemon",
+			callback:    commandDescribe,
 		},
-		"listprev": {
-			name:        "listprev",
-			description: "List the last batch of pokemon",
-			callback:    commandListPrev,
+		"explore": {
+			name:        "explore <location_name>",
+			description: "Explore a location",
+			callback:    commandExplore,
+		},
+		"map": {
+			name:        "map",
+			description: "Get the next page of locations",
+			callback:    commandMapf,
+		},
+		"mapb": {
+			name:        "mapb",
+			description: "Get the previous page of locations",
+			callback:    commandMapb,
 		},
 		"exit": {
 			name:        "exit",
