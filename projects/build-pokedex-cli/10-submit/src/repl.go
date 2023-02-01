@@ -12,10 +12,10 @@ import (
 const exitCommandSlug = "exit"
 
 type config struct {
-	pokeapiClient     pokeapi.Client
-	nextLocationsURL  *string
-	prevLocationsURL  *string
-	allShallowPokemon *pokeapi.RespShallowPokemon
+	pokeapiClient    pokeapi.Client
+	nextLocationsURL *string
+	prevLocationsURL *string
+	caughtPokemon    map[string]pokeapi.Pokemon
 }
 
 func startRepl(cfg *config) {
@@ -69,10 +69,15 @@ func getCommands() map[string]cliCommand {
 			description: "Displays a help message",
 			callback:    commandHelp,
 		},
-		"desc": {
-			name:        "desc <pokemon_name>",
-			description: "Get details about a Pokemon",
-			callback:    commandDescribe,
+		"catch": {
+			name:        "catch <pokemon_name>",
+			description: "Attempt to catch a pokemon",
+			callback:    commandCatch,
+		},
+		"inspect": {
+			name:        "inspect <pokemon_name>",
+			description: "View details about a caught Pokemon",
+			callback:    commandInspect,
 		},
 		"explore": {
 			name:        "explore <location_name>",
@@ -88,6 +93,11 @@ func getCommands() map[string]cliCommand {
 			name:        "mapb",
 			description: "Get the previous page of locations",
 			callback:    commandMapb,
+		},
+		"pokedex": {
+			name:        "pokedex",
+			description: "See all the pokemon you've caught",
+			callback:    commandPokedex,
 		},
 		"exit": {
 			name:        "exit",
