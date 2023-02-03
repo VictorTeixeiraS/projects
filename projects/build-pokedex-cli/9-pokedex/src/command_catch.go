@@ -19,8 +19,6 @@ func commandCatch(cfg *config, args ...string) error {
 
 	res := rand.Intn(pokemon.BaseExperience)
 
-	fmt.Println("====")
-	defer fmt.Println("====")
 	fmt.Printf("Throwing a Pokeball at %s...\n", pokemon.Name)
 	if res > 40 {
 		fmt.Printf("%s escaped!\n", pokemon.Name)

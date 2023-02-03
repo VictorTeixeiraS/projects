@@ -1,9 +1,17 @@
-# Submit the link to your repository above!
+# Submit the link to your Git repository above!
 
-If you haven't been keeping track of your project in Git, you should be! Once you have your finished project on Github or another source control platform, submit the link to your project above! Your link should look something like this: `https://github.com/gihub-username/repo-name`.
+Your link should look something like `https://github.com/gihub-username/repo-name`.
 
-I hope you've enjoyed the project, it's always good to solidify the things you learn in courses by getting your hands dirty with a real project.
+## Ideas for extending the project
 
-## Contact me
+You don't have to extend this project, but if you're planning to make this something you add to your personal portfolio, you should consider making it your own by adding to it. Here are just a few ideas.
 
-I hang out in the [Boot.dev Discord](https://discord.gg/EEkFwbv) and on [Twitter @wagslane](https://twitter.com/wagslane). Let me know what you thought of the project!
+* Update the CLI to support the "up" arrow to cycle through previous commands
+* Simulate battles between pokemon
+* Add more unit tests
+* Refactor your code to organize it better and make it more testable
+* Keep pokemon in a "party" and allow them to level up
+* Persist a user's Pokedex to disk so they can save progress between sessions
+* Use the PokeAPI to make exploration more interesting. For example, rather than typing the names of areas, maybe you are given choices of areas and just type "left" or "right"
+* Random encounters with wild pokemon
+* Adding support for different types of balls (Pokeballs, Great Balls, Ultra Balls, etc), which have different chances of catching pokemon

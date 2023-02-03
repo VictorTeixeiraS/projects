@@ -16,7 +16,6 @@ func commandInspect(cfg *config, args ...string) error {
 		return errors.New("you have not caught that pokemon")
 	}
 
-	fmt.Println("====")
 	fmt.Println("Name:", pokemon.Name)
 	fmt.Println("Height:", pokemon.Height)
 	fmt.Println("Weight:", pokemon.Weight)
@@ -28,6 +27,5 @@ func commandInspect(cfg *config, args ...string) error {
 	for _, typeInfo := range pokemon.Types {
 		fmt.Println("  -", typeInfo.Type.Name)
 	}
-	fmt.Println("====")
 	return nil
 }

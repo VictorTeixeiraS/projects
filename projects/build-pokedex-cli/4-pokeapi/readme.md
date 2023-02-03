@@ -16,10 +16,10 @@ If you're on the first "page" of results, this command should just print an erro
 
 ## Tips for this step
 
-* You'll need to use the [PokeAPI location-area endpoint](https://pokeapi.co/docs/v2#location-areas) to get the location areas.
+* You'll need to use the [PokeAPI location-area endpoint](https://pokeapi.co/docs/v2#location-areas) to get the location areas. Calling the endpoint without an `id` will return a batch of location areas.
 * Your commands should now accept a pointer to a "config" struct as a parameter. This struct will contain the `Next` and `Previous` URLs that you'll need to paginate through location areas.
 * [JSON lint](https://jsonlint.com/) is a useful tool for debugging JSON, it makes it easier to read.
-* [JSON to Go](https://mholt.github.io/json-to-go/) a useful tool for converting JSON to Go structs. You can use it to generate the structs you'll need to parse the PokeAPI response.
+* [JSON to Go](https://mholt.github.io/json-to-go/) a useful tool for converting JSON to Go structs. You can use it to generate the structs you'll need to parse the PokeAPI response. Keep in mind it sometimes can't know the exact type of a field that you want, because there are multiple valid options. For nullable strings, use `*string`.
 * [Here's an example](https://pkg.go.dev/net/http#example-Get) of how to make a GET request in Go.
 * [Here's how to unmarshal](https://blog.boot.dev/golang/json-golang/#example-unmarshal-json-to-struct-decode) a slice of bytes into a Go struct.
 * I recommend creating an [internal package](https://dave.cheney.net/2019/10/06/use-internal-packages-to-reduce-your-public-api-surface) that manages your PokeAPI interactions. It's not required, but it's a good organizational and architectural pattern.

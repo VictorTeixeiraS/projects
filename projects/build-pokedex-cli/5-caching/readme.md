@@ -1,6 +1,6 @@
 # Caching
 
-It's time to implement caching! This will make moving around the map feel a lot snappier. We'll be building a flexible caching system so that it will also help with performance in future steps.
+It's time to implement caching! This will make moving around the map feel a lot snappier. We'll be building a *flexible* caching system to help with performance in future steps.
 
 ## What is a cache?
 
