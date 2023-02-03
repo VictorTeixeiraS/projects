@@ -28,3 +28,9 @@ Check to make sure you've activated the correct version of `node` by typing:
 node --version
 # Prints: v18.7.0
 ```
+
+## A video walkthrough of this project
+
+*I recommend only using this video when you get super stuck. Try to build the project on your own!*
+
+@[youtube](https://www.youtube.com/watch?v=C0pXaNchNTA)
