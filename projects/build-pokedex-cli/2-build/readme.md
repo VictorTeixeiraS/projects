@@ -1,6 +1,6 @@
 # Build
 
-By the end of this step, you'll have a simple working Go program!
+By the end of this step, you'll have a simple working program in Go!
 
 ## Boilerplate
 
