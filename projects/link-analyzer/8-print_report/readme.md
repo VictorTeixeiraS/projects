@@ -14,4 +14,4 @@ The actual sorting logic can probably its own function that `printReport` calls.
 
 ## Use it in main.js
 
-Use your new `printReport` function in `main.js` and enjoy your new SEO link analyzer!
+Use your new `printReport` function in `main.js` and enjoy your new web crawler!

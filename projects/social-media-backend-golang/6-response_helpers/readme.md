@@ -19,12 +19,17 @@ An endpoint would call this function once per request, right before returning. I
 ```go
 response, err := json.Marshal(payload)
 // deal with err ...
+
+// w is our ResponseWriter
 w.Write(dat)
 ```
 
 ### Write status code
 
-`w.WriteHeader(code)`
+```go
+// w is our ResponseWriter
+w.WriteHeader(code)
+```
 
 ## Updating the handler
 
@@ -59,8 +64,11 @@ This function should take the `err`, create a new `errorBody`, then call `respon
 
 Let's test `respondWithError` by adding a new handler function called `testErrHandler` and connecting it to a new path in our API:
 
-`m.HandleFunc("/err", testErrHandler)`
+```go
+// m is our ServeMux
+m.HandleFunc("/err", testErrHandler)`
+```
 
 ## Assignment
 
-To pass off this step, make GET requests to [http://localhost:8080](http://localhost:8080) and [http://localhost:8080/err](http://localhost:8080/err). Make sure you get the responses you expect!
+To pass off this step, make GET requests to [http://localhost:8080](http://localhost:8080) and [http://localhost:8080/err](http://localhost:8080/err). Make sure you get the responses you expect! Make it so the root path returns a `200` code and the `/err` path returns a `500` error code.
