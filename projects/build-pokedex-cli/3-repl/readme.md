@@ -1,12 +1,12 @@
 # REPL
 
-[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) stands for "read-eval-print loop". It's a common type of program that allows for interactivity. You type in a command, the program evaluates it and prints the result. You can then type in another command, and so on.
+[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) stands for "read-eval-print loop". It's a common type of program that allows for interactivity. You type in a command, and the program evaluates it and prints the result. You can then type in another command, and so on.
 
 Your command line is a REPL! Our Pokedex will also be a REPL.
 
 ## Assignment
 
-Remove your "hello world message".
+Remove your "hello world" message.
 
 In this step, your program should start up an interactive REPL when you run it. It should print a prompt, wait for you to type in a command, and then print the result of that command. The prompt should look like this:
 

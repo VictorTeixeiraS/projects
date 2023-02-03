@@ -10,7 +10,7 @@ The `map` command displays the names of 20 location areas in the Pokemon world. 
 
 ### mapb (map back)
 
-Similar to the `map` command, but instead of displaying the next 20 locations, it displays the previous 20 locations. It's a way to go back.
+Similar to the `map` command, however, instead of displaying the next 20 locations, it displays the previous 20 locations. It's a way to go back.
 
 If you're on the first "page" of results, this command should just print an error message.
 

@@ -1,6 +1,6 @@
 # Pokedex
 
-Add the `pokedex` command. It takes no arguments, but should print a list of all the names of the Pokemon the user has caught.
+Add the `pokedex` command. It takes no arguments but should print a list of all the names of the Pokemon the user has caught.
 
 ## Example usage
 
