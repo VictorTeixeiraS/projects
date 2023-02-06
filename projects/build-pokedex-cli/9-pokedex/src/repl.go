@@ -9,8 +9,6 @@ import (
 	"github.com/bootdotdev/courses/projects/pokedexcli/internal/pokeapi"
 )
 
-const exitCommandSlug = "exit"
-
 type config struct {
 	pokeapiClient    pokeapi.Client
 	nextLocationsURL *string

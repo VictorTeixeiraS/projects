@@ -7,8 +7,6 @@ import (
 	"strings"
 )
 
-const exitCommandSlug = "exit"
-
 func startRepl() {
 	reader := bufio.NewScanner(os.Stdin)
 	for {
