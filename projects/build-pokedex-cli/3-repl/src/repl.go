@@ -37,9 +37,8 @@ func startRepl() {
 }
 
 func cleanInput(text string) []string {
-	output := strings.TrimSpace(text)
-	output = strings.ToLower(output)
-	words := strings.Split(output, " ")
+	output := strings.ToLower(text)
+	words := strings.Fields(output)
 	return words
 }
 
