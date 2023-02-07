@@ -33,6 +33,10 @@ Gets an entry from the cache. It should take a `key` (a `string`) and return a `
 
 This method should be called when the cache is created (by the `NewCache` function). Each time an `interval` (the `time.Duration` passed to `NewCache`) passes it should remove any entries that are older than the `interval`. This makes sure that the cache doesn't grow too large over time. For example, if the interval is 5 seconds, and an entry was added 7 seconds ago, that entry should be removed.
 
+## A note on concurrency
+
+Maps are *not* thread-safe in Go. You should use a [sync.Mutex](https://blog.boot.dev/golang/golang-mutex/) to lock access to the map when you're adding, getting entries or reaping entries. It's unlikely that you'll have issues because reaping only happens every ~5 minutes, but it's still *possible*, so you should make your cache package safe for concurrent use.
+
 ## Using the cache
 
 Update your code that makes requests to the PokeAPI to use the cache. If you already have the data for a given URL (which is our cache key) in the cache, you should use that instead of making a new request.
