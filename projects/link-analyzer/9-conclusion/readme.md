@@ -1,4 +1,4 @@
-# Submit the link to your repository above!
+# Submit the link to your repository!
 
 If you haven't been keeping track of your project in Git, you should be! Once you have your finished project on GitHub or another source control platform, submit the link to your project above! Your link should look something like `https://github.com/gihub-username/repo-name`.
 

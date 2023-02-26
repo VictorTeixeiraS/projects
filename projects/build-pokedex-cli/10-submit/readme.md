@@ -1,4 +1,4 @@
-# Submit the link to your Git repository above!
+# Submit the link to your Git repository!
 
 Your link should look something like `https://github.com/gihub-username/repo-name`.
 
