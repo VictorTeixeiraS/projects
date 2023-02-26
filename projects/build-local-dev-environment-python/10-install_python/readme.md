@@ -10,7 +10,9 @@ Run this command to install pyenv with [webi](https://webinstall.dev/pyenv/).
 curl -sS https://webi.sh/pyenv | sh
 ```
 
-Then close your terminal (trash icon in the top-right of the terminal) and, if you are using VS code, re-open it with:
+Make sure to follow the instructions and read any warnings.
+
+When you're done, you'll probably need to close your terminal (trash icon in the top-right of the terminal) and, if you are using VS code, re-open it with:
 
 ```
 ctrl + `

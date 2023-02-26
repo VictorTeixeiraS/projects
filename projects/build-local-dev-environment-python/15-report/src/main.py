@@ -1,7 +1,5 @@
-book_path = "books/frankenstein.txt"
-
-
 def main():
+    book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     chars_dict = get_chars_dict(text)
@@ -53,7 +51,7 @@ def get_character_sums(text):
 
 
 def get_book_text(path):
-    with open(book_path) as f:
+    with open(path) as f:
         return f.read()
 
 
