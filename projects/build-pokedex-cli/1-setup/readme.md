@@ -23,3 +23,9 @@ Before we dive into the project, let's make sure you have everything you'll need
 5. Also, in VS Code, I recommend setting up "format on save". This will automatically format your code when you save it. Poke through the Go extension settings to look at some of the options and make sure you're happy with your tooling!
 
 If you're ready, move on to the next step!
+
+## Optional video walkthrough
+
+*Try to build this project on your own!* Use this video if you get stuck, or to compare your architecture and coding patterns to mine.
+
+@[youtube](https://www.youtube.com/watch?v=8yrmAGcCnKg)
